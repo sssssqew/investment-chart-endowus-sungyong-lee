@@ -6,9 +6,7 @@ html, body, #root {
   box-sizing: border-box; /* Include padding and border in width/height */
 }
 
-/* If App.css, remove or modify #root's max-width */
 #root {
-  /* max-width: 1280px;  <-- Remove this line or change to 'none' */
   max-width: none;
   /* margin: 0 auto; */
   /* padding: 2rem; */
