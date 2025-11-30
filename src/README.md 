@@ -21,8 +21,7 @@ The project implemented an interactive line chart using React and Chart.js. My a
 *   'Mon YYYY' formatted date labels on the X-axis.
 *   Data comparison functionality via `chartjs-plugin-crosshair`.
 *   Modular code architecture focused on reusability, maintainability, and scalability.
-*   Deployment: [Add your deployed project link here (e.g., Netlify, Vercel) (Optional)]
-*   (If you submitted a Figma file) Figma Prototype: [Add your Figma link here (Optional)]
+*   **GitHub Repository:** [Your GitHub Repository Link Here] *(This is a good place to put it for quick reference)*
 
 ## 4. How to Run
 Here's how to run the project:
@@ -52,11 +51,8 @@ Here's how to run the project:
 2.  Open your browser and navigate to `http://localhost:5173/` (or the specified port).
 
 ## 5. Screenshots
-![Screenshot 1 Description](path/to/your/screenshot1.png)
+![Main Chart View](public/main-chart-view.png)
 _A brief description of the chart displaying investment projections with crosshair active._
-
-![Screenshot 2 Description](path/to/your/screenshot2.png)
-_A brief description of another view of the chart, showcasing responsive design._
 
 
 ## 6. Challenges & Learnings
@@ -64,7 +60,7 @@ _A brief description of another view of the chart, showcasing responsive design.
 *   **Refactoring for Reusability:** Learned the importance of abstracting data processing (`processInvestmentChartData`) and formatting (`formatUtils.js`) logic to enhance modularity. This led to a cleaner and more adaptable codebase.
 *   **Component Encapsulation:** Practiced effective component responsibility distribution by encapsulating all investment chart-specific logic within an `InvestmentChartContainer`, preventing the main `App.jsx` from becoming overly complex.
 
-## 7. Future Improvements (Optional)
+## 7. Future Improvements
 *   **Theme Toggle:** Implement dark/light mode for a personalized user experience.
 *   **Data Filtering/Range Selection:** Add functionality for users to filter data periods or select specific datasets.
 *   **Accessibility Enhancements:** Improve chart accessibility with ARIA attributes and keyboard navigation.
