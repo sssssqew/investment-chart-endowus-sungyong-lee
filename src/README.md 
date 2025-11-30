@@ -21,7 +21,7 @@ The project implemented an interactive line chart using React and Chart.js. My a
 *   'Mon YYYY' formatted date labels on the X-axis.
 *   Data comparison functionality via `chartjs-plugin-crosshair`.
 *   Modular code architecture focused on reusability, maintainability, and scalability.
-*   **GitHub Repository:** [Your GitHub Repository Link Here] *(This is a good place to put it for quick reference)*
+*   **GitHub Repository:** [https://github.com/sssssqew/investment-chart-endowus-sungyong-lee]
 
 ## 4. How to Run
 Here's how to run the project:
