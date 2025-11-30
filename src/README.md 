@@ -1,0 +1,70 @@
+# Endowus Design Engineer Intern Assignment - Sungyong Lee
+
+## 1. Introduction / Goal
+This assignment demonstrates my technical skills in data visualization and design approach. The goal was to build a reusable, maintainable, and user-friendly solution for rendering interactive line charts.
+
+## 2. Approach & Design Decisions
+The project implemented an interactive line chart using React and Chart.js. My approach prioritized modularity and user experience (UX), guided by the following principles:
+
+*   **Modular Architecture for Maintainability:**
+    *   **`utils/formatUtils.js`:** Centralized highly reusable formatting utilities for numbers (K, M units) and dates.
+    *   **`config/chartConfig.js`:** Encapsulated Chart.js configurations and data processing logic. Functions were designed for flexibility, accepting dynamic parameters for titles, labels, and currency symbols.
+    *   **`InvestmentChartContainer.jsx`:** A dedicated component encapsulates all chart-related logic (loading, processing, and rendering), ensuring a clear separation of concerns from `App.jsx`.
+*   **User-Centric Data Visualization:**
+    *   Enhanced readability by automatically converting large monetary values to K/M units on tooltips and Y-axis labels.
+    *   Formatted X-axis labels to 'Mon YYYY' for intuitive time series understanding.
+    *   Integrated `chartjs-plugin-crosshair` to facilitate precise comparison of data points across multiple lines.
+
+## 3. Key Features / Deliverables
+*   Interactive line chart visualizing `investment.json` data.
+*   Automated K/M unit conversion for tooltips and Y-axis monetary values.
+*   'Mon YYYY' formatted date labels on the X-axis.
+*   Data comparison functionality via `chartjs-plugin-crosshair`.
+*   Modular code architecture focused on reusability, maintainability, and scalability.
+*   Deployment: [Add your deployed project link here (e.g., Netlify, Vercel) (Optional)]
+*   (If you submitted a Figma file) Figma Prototype: [Add your Figma link here (Optional)]
+
+## 4. How to Run
+Here's how to run the project:
+
+### Prerequisites
+*   Node.js (`v20.19.2` version used)
+*   npm (Node Package Manager) or Yarn
+
+### Installation
+1.  Clone this repository:
+    ```bash
+    git clone [Your Repository Link]
+    cd [Your-Project-Folder-Name]
+    ```
+2.  Install the dependencies:
+    ```bash
+    npm install
+    # or yarn install
+    ```
+
+### Running the Project
+1.  Start the development server:
+    ```bash
+    npm start
+    # or yarn start
+    ```
+2.  Open your browser and navigate to `http://localhost:5173/` (or the specified port).
+
+## 5. Screenshots
+![Screenshot 1 Description](path/to/your/screenshot1.png)
+_A brief description of the chart displaying investment projections with crosshair active._
+
+![Screenshot 2 Description](path/to/your/screenshot2.png)
+_A brief description of another view of the chart, showcasing responsive design._
+
+
+## 6. Challenges & Learnings
+*   **`chartjs-plugin-crosshair` Integration:** Encountered a timing error during integration with Chart.js v4. I resolved this by implementing a `CustomCrosshairPlugin` that safely wraps the original `afterDraw` method, ensuring stability.
+*   **Refactoring for Reusability:** Learned the importance of abstracting data processing (`processInvestmentChartData`) and formatting (`formatUtils.js`) logic to enhance modularity. This led to a cleaner and more adaptable codebase.
+*   **Component Encapsulation:** Practiced effective component responsibility distribution by encapsulating all investment chart-specific logic within an `InvestmentChartContainer`, preventing the main `App.jsx` from becoming overly complex.
+
+## 7. Future Improvements (Optional)
+*   **Theme Toggle:** Implement dark/light mode for a personalized user experience.
+*   **Data Filtering/Range Selection:** Add functionality for users to filter data periods or select specific datasets.
+*   **Accessibility Enhancements:** Improve chart accessibility with ARIA attributes and keyboard navigation.
