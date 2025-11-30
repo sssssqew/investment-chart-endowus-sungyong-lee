@@ -45,7 +45,7 @@ Here's how to run the project:
 ### Running the Project
 1.  Start the development server:
     ```bash
-    npm start
+    npm run dev
     # or yarn start
     ```
 2.  Open your browser and navigate to `http://localhost:5173/` (or the specified port).
